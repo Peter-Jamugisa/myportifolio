@@ -17,50 +17,46 @@ import { Phone } from 'lucide-react';
 
 function FirstSection() {
   return (
-    <div className='flex w-full items-center h-screen bg-[#172554]'>
+    <div className='flex flex-col-1 gap-2 mb lg:flex w-full items-center h-screen bg-[#172554]'>
       <div className='flex flex-col items-center justify-center p-14 w-full md:w-1/2 '>
-        <div className='space-y-3 md:w-96 mx-auto'>
-          <p className='text-white text-center font-extrabold text-6xl '>I'm </p>
-          <p className='text-white text-center font-extrabold text-6xl '>Jamugisa Peter Paul</p>
+        <div className='space-y-3 w-full  md:w-96 mx-auto mt-16'>
+          <p className='font-extrabold text-3xl text-white text-center md:font-extrabold md:text-6xl '>I'm </p>
+          <p className='text-white font-extrabold text-center text-3xl md:font-extrabold md:text-6xl '>Jamugisa Peter Paul</p>
           <div>
-            <p className='text-white text-center text-4xl'>FrontEnd Developer</p>
-            <p className='text-white text-center'>Crafting the Future, One Pixel at a Time</p>
+            <p className='text-purple-500 text-center font-bold text-xl lg:text-4xl'>FrontEnd Developer</p>
+            <p className='text-orange-600 text-center '>Crafting the Future, One Pixel at a Time</p>
           </div>
-          {/* leave */}
-          {/* <div className="relative space-y-[-10]">
-            <div className="absolute inset-x-0 top-0 h-5 bg-green-500"></div>
-          </div> */}
 
 
-          <div className="grid grid-rows-1 grid-flow-col gap-10 pt-16">
-            <div className='flex flex-col items-center justify-center space-y-[10]'>
+          <div className="grid grid-rows-1 grid-flow-col gap-1 pt-16 justify-center">
+            <div className='flex flex-col items-center justify-center '>
               <div onClick={() => window.open('https://github.com/Peter-Jamugisa?tab=repositories', '_blank')} className='cursor-pointer'>
-                <Github className='h-16 w-16 bg-[#FFFFFF] text-[#000000] py-4 px-4 rounded-lg' />
+                <Github className='w-14 h-14 bg-[#FFFFFF] text-[#000000] rounded-lg  md:h-16 md:w-16 py-4 px-4 ' />
               </div>
-              <p className='text-center justify-center text-xl font-bold text-white'>Github</p>
+              <p className='text-center justify-center text-base font-semibold text-white pr-2'>Github</p>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div onClick={() => window.open('https://www.linkedin.com/in/jamugisa-peter-43b895295/', '_blank')} className='cursor-pointer'>
-                <Linkedin className='h-16 w-16 bg-[#1d4ed8] text-[#FFFFFF] rounded-lg py-4 px-4' />
+                <Linkedin className='w-14 h-14 bg-[#1d4ed8] text-[#FFFFFF] rounded-lg  md:h-16 md:w-16 py-4 px-4' />
               </div>
-              <p className='text-center justify-center text-xl font-bold text-white'>Linkedin</p>
+              <p className='text-center justify-center text-base font-semibold text-white pl-1'>Linkedin</p>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div onClick={() => window.open('https://whatsapp.com/dl/', '_blank')} className='cursor-pointer'>
-                <Phone className='h-16 w-16 bg-[#76CD26] text-[#ffffff] rounded-lg py-4 px-4' />
+                <Phone className='h-14 w-14 bg-[#76CD26] text-[#ffffff] rounded-lg  md:h-16 md:w-16 py-4 px-4' />
 
               </div>
-              <p className='text-center justify-center text-xl font-bold text-white'>Whatsapp</p>
+              <p className='text-center justify-center text-base font-semibold text-white pl-1'>Whatsapp</p>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div onClick={() => window.open('https://medium.com/@jamugisapeter21', '_blank')} className='cursor-pointer'>
-                <HeartHandshake className='h-16 w-16 bg-[#FFD978] text-[#7C5900] rounded-lg py-4 px-4' />
+                <HeartHandshake className='h-14 w-14 bg-[#FFD978] text-[#7C5900] rounded-lg  md:h-16 md:w-16 py-4 px-4' />
               </div>
 
-              <p className='text-center justify-center text-xl font-bold text-white'>Blog</p>
+              <p className='text-center justify-center text-base font-semibold text-white'>Blog</p>
             </div>
 
 
@@ -72,7 +68,7 @@ function FirstSection() {
       </div>
 
       <div className='hidden relative w-1/2 h-full md:flex items-center justify-center'>
-        <div className='relative w-full h-full rounded-full bg-gradient-to-b from-[#cbd5e1] to-[#000080]'>
+        <div className=' relative w-40 h-40 rounded-full bg-gradient-to-b from-[#cbd5e1] to-[#000080] md:w-full md:h-full '>
           <div className='absolute inset-0 flex justify-center items-center overflow-hidden -mb-20'>
             <Image
               src={CardImage}

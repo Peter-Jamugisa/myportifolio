@@ -15,7 +15,7 @@ function Services() {
             <div >
                 <p className='font-extrabold text-center text-4xl pb-8 pt-4 text-white'>Services</p>
             </div>
-            <div className="grid grid-cols-4 gap-2 pt-8"> {/* Adjusted gap for better spacing */}
+            <div className="grid grid-cols-1 space-y-12 md:grid-cols-4 gap-2 pt-8"> {/* Adjusted gap for better spacing */}
                 <div className="flex items-center justify-center h-auto"> {/* Changed h-screen to h-auto */}
                     <Card className="h-60 w-60 bg-[url('/arduino.jpeg')] bg-cover rounded-full flex flex-col items-center justify-center">
                         <p className="font-bold text-white text-xl">Aurduino Programing</p>
@@ -24,7 +24,7 @@ function Services() {
                 </div>
 
                 <div className="flex items-center justify-center h-auto"> {/* Changed h-screen to h-auto */}
-                    <Card className="h-60 w-60 bg-[url('/software.jpeg')] bg-cover rounded-full flex flex-col items-center justify-center">
+                    <Card className="h-60 w-60 bg-[url('/software.jpeg')] bg-cover rounded-full flex flex-col items-center justify-center ">
                         <p className="font-bold text-white text-xl">Software Development</p>
                         <p className="font-bold text-white">(Frontend)</p>
                     </Card>

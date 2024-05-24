@@ -48,14 +48,24 @@ const NavBar = () => {
                 <Menu color="white" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <Link href="/home">
+                <Link href="#Home">
                   <DropdownMenuItem>
-                    Login
+                    Home
                   </DropdownMenuItem>
                 </Link>
-                <Link href="/home">
+                <Link href="#About">
                   <DropdownMenuItem>
-                    Register
+                    About
+                  </DropdownMenuItem>
+                </Link>
+                <Link href="#Projects">
+                  <DropdownMenuItem>
+                    Projects
+                  </DropdownMenuItem>
+                </Link>
+                <Link href="#Services">
+                  <DropdownMenuItem>
+                    Services
                   </DropdownMenuItem>
                 </Link>
               </DropdownMenuContent>
