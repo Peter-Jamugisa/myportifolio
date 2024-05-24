@@ -12,22 +12,34 @@ export default function Home() {
       <NavBar />
 
       <div>
-        <FirstSection />
+        <section id="Home">
+          <FirstSection />
+        </section>
+
       </div>
 
       <div>
-        <About />
+        <section id="About">
+          <About />
+        </section>
       </div>
 
       <div>
-        <Projects />
+        <section id="Projects">
+          <Projects />
+        </section>
       </div>
 
       <div>
-        <Services />
+        <section id="Services">
+          <Services />
+        </section>
       </div>
+
       <div>
+
         <Footer />
+
       </div>
 
     </main>

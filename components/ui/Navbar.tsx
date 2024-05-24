@@ -24,22 +24,22 @@ const NavBar = () => {
             <div className="hidden md:flex md:flex-row text-white items-center md:justify-center flex-grow space-x-4">
               <div className="flex items-center space-x-1 text-background font-heavy">
                 <i className="text-white fa-solid fa-house-user"></i>
-                <div>Home</div>
+                <Link href="#Home"><div>Home</div></Link>
               </div>
 
               <div className="flex items-center space-x-1 text-background font-heavy">
                 <i className="text-white fa-solid fa-circle-info"></i>
-                <div>About me</div>
+                <Link href="#About"><div>About</div></Link>
               </div>
 
               <div className="flex items-center space-x-1 text-background font-heavy">
                 <i className="text-white fa-solid fa-user"></i>
-                <div>Services</div>
+                <Link href="#Projects"><div>Projects</div></Link>
               </div>
 
               <div className="flex items-center space-x-1 text-background font-heavy">
                 <i className="text-white fa-solid fa-briefcase"></i>
-                <div>Blog</div>
+                <Link href="#Services"><div>Services</div></Link>
               </div>
             </div>
 
